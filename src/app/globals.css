@@ -1,0 +1,145 @@
+.navbar-nav .dropdown-toggle::after {
+  margin-left: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.offcanvas {
+  transition: transform 0.3s ease-in-out;
+}
+
+.offcanvas .nav-link {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.offcanvas .nav-link:hover {
+  background-color: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa !important;
+  transition: background-color 0.2s ease;
+}
+
+.collapse {
+  transition: height 0.3s ease;
+}
+
+.collapsing {
+  transition: height 0.3s ease;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.25);
+}
+
+.deals-pipeline {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.deals-list {
+  border-left: 3px solid #e9ecef;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2rem !important;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .deals-pipeline .row {
+    margin: 0;
+  }
+
+  .deals-pipeline .col-md-3,
+  .deals-pipeline .col-md-2,
+  .deals-pipeline .col-md-1 {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .deals-pipeline .row {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .deals-pipeline .col-md-3,
+  .deals-pipeline .col-md-2,
+  .deals-pipeline .col-md-1 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .deals-pipeline .col-md-1 {
+    text-align: left !important;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-border {
+  animation: spin 1s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.background-lite-info {
+  background-color: #cbe6ff;
+}
