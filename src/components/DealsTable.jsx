@@ -30,11 +30,10 @@ export default function DealsTable() {
           .includes(filters.searchTerm.toLowerCase());
 
       const matchesDateRange =
-        !filters.dateFrom ||
-        !filters.dateTo ||
-        (new Date(deal.createdAt) >= new Date(filters.dateFrom) &&
+        (!filters.dateFrom ||
+          new Date(deal.createdAt) >= new Date(filters.dateFrom)) &&
+        (!filters.dateTo ||
           new Date(deal.createdAt) <= new Date(filters.dateTo));
-
       return matchesSearch && matchesDateRange;
     });
   }, [filters]);
