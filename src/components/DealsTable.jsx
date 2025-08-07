@@ -139,13 +139,6 @@ export default function DealsTable() {
               </div>
             ))}
           </div>
-
-          <div className="mt-4 text-muted">
-            <small>
-              Total Deals: <strong>{totalDeals}</strong> | Total Revenue in
-              Pipeline: <strong>${totalRevenue.toLocaleString()}</strong>
-            </small>
-          </div>
         </Card.Body>
       </Card>
     </div>
